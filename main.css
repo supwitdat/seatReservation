@@ -6,6 +6,10 @@ html, body {
   background-color: lightblue;
 }
 
+body {
+  position: relative;
+}
+
 header {
   height: 100px;
   width: 100%;
@@ -31,11 +35,21 @@ header {
 }
 
 .seat {
-    height: 90px;
-    width: 85px;
+    height: 60%;
+    width: 5%;
     display: inline-block;
     margin: 10px;
     background-image: url('chair.jpg');
     background-repeat: no-repeat;
     background-size: contain;
+}
+
+form {
+  height: 400px;
+  width: 300px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: green;
+  margin: 10px;
 }
