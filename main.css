@@ -39,9 +39,13 @@ header {
     width: 5%;
     display: inline-block;
     margin: 10px;
-    background-image: url('chair.jpg');
+    background-image: url('chair.png');
     background-repeat: no-repeat;
     background-size: contain;
+}
+
+.seat:hover {
+  background-image: url('chair3.png');
 }
 
 form {
