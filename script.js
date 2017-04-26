@@ -32,19 +32,16 @@ $(document).ready(function(){
   $('.seat').on('click', function(){
     var id = $(this).attr('id');
     console.log(id);
-    $('#seatNumber').val(id);
+    $('#firstName').val(id);
 
   });
 
-
     $("#submit").on("click",function getName(){
-
 var firstName =$("#firstName").val();
 var lastName=$("#lastName").val();
 var email =$("#email").val();
 var phoneNumber =$("#phoneNumber").val();
 
-<<<<<<< HEAD
 var person = {};
   person.name = "firstName";
   person.lastName = "lastName";
@@ -64,22 +61,6 @@ console.log(person);
       // console.log(lastName)
       // console.log(email)
       // console.log(phoneNumber)
-=======
-  var person = $('form').serializeArray();
-  console.log(person);
-
-      console.log(firstName)
-      console.log(lastName)
-      console.log(email)
-      console.log(phoneNumber)
->>>>>>> ab9e25a05391cf959286528ea85e23dd69abe8be
     });
-
-
-<<<<<<< HEAD
-=======
-
-var peopleArray = [];
->>>>>>> ab9e25a05391cf959286528ea85e23dd69abe8be
 
 });
