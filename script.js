@@ -3,21 +3,40 @@ $(document).ready(function(){
 
   var form = $('form');
       form.hide();
+<<<<<<< HEAD
 
       // form.slideDown(8000).fadeOut(8000);
 
+=======
+     //
+    //   form.slideDown(8000).fadeOut(8000);
+    //  ///// alex added slideUp
+>>>>>>> 6adbce640c29ea15da13216a425ff261066f08c7
 
       form.slideDown(3000);
-      form.fadeTo(3000, 0.0);
+      // form.fadeTo(3000, 0.0);
 
-    var seat = $('.seat');
-    seat.on('click',function(){
-        form.fadeTo(2000, 1.0);
-    });
+    // var seat = $('.seat');
+    // seat.on('click',function(){
+    //     form.fadeToggle(2000, 1.0);
+    // });
+
+    // $('.seat').click(function() {
+    //   form.fadeToggle( "slow", "linear" );
+    // });
 
     seat.mouseleave(function(){
       form.fadeTo(1000, 0.0);
 
     });
+
+     var seats = $('.seat');
+
+     console.log(seats);
+
+     function getName(){
+       var firstName = document.getElementById('firstName').value;
+       console.log(firstName);
+     }
 
 });
