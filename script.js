@@ -38,30 +38,31 @@ $(document).ready(function(){
   $('.seat').on('click', function(){
     var id = $(this).attr('id');
     console.log(id);
-    $('#firstName').val(id);
+    $('#seatNumber').val(id);
 
   });
 
+
     $("#submit").on("click",function getName(){
+
 var firstName =$("#firstName").val();
 var lastName=$("#lastName").val();
 var email =$("#email").val();
 var phoneNumber =$("#phoneNumber").val();
 
-
-
   var person = $('form').serializeArray();
   console.log(person);
 
-      // console.log(firstName)
-      // console.log(lastName)
-      // console.log(email)
-      // console.log(phoneNumber)
+      console.log(firstName)
+      console.log(lastName)
+      console.log(email)
+      console.log(phoneNumber)
     });
 
 // ARRAYS
 var seats = $('.seat');
 var seatNumber = $('.seat').attr('data-seat-number');
+
 
 
 var peopleArray = [];
