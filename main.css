@@ -4,10 +4,15 @@ html, body {
   margin: 0px;
   padding: 0px;
   background-color: lightblue;
+  background-image:url('cinema.jpg');
+  background-repeat: no-repeat;
+  background-size:cover;
 }
 
 body {
   position: relative;
+
+
 }
 
 header {
@@ -20,7 +25,7 @@ header {
 #seatWrap {
   width: 90%;
   height: 70%;
-  background-color: red;
+  /*background-color: red;*/
   margin: 0 auto;
   margin-top: 50px;
 }
@@ -38,10 +43,15 @@ header {
     height: 60%;
     width: 5%;
     display: inline-block;
-    margin: 10px;
-    background-image: url('chair.jpg');
+    margin: 20px;
+    background-image: url('chair.png');
     background-repeat: no-repeat;
     background-size: contain;
+
+}
+
+.seat:hover {
+  background-image: url('chair3.png');
 }
 
 form {
