@@ -33,16 +33,38 @@ $(document).ready(function(){
     //
     // });
 
+//ARRAY
+    var people = [];
+
+
+
 //FUNCTIONS
 
   $('.seat').on('click', function(){
     var id = $(this).attr('id');
-    console.log(id);
+    //To Test if click matches seat id
+    //console.log(id);
     $('#seatNumber').val(id);
 
     form.slideToggle(1000);
 
   });
+
+ var idCheck = $('.seat').attr('id');
+
+$('.seat').on('mousein', function(){
+    var divId = $(this).attr('id');
+    console.log('its the id');
+  people.forEach(function(index){
+    if( divId === index.seatNumber);
+          console.log('it matched');
+  });
+
+
+
+});
+
+
 
     $("#submit").on("click",function getName(){
 var firstName =$("#firstName").val();
@@ -58,9 +80,16 @@ var person = {};
   person.phoneNumber = phoneNumber;
   person.seatNumber = seatNumber;
 
-console.log(person);
+people.push(person);
+
+// people.forEach(function(index){
+//   if( idCheck === index.seatNumber);
+//
+// });
 
 });
+
+
 
 
 });
