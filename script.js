@@ -1,3 +1,4 @@
+
 $(document).ready(function(){
 
 
@@ -28,9 +29,18 @@ $(document).ready(function(){
 
      console.log(seats);
 
-     function getName(){
-       var firstName = document.getElementById('firstName').value;
+     var firstName = $('#firstName').on('click');
+
+     $('#testButton').on('click', function getName(){
+       var firstName = $('#firsName').val();
+
        console.log(firstName);
-     }
+
+     });
+
+    //  function getName(){
+    //    var firstName = document.getElementById('firstName').value;
+    //    console.log(firstName);
+    //  }
 
 });
