@@ -27,15 +27,16 @@ $(document).ready(function(){
      var seats = $('.seat');
      console.log(seats);
 
+
     $("#submit").on("click",function getName(){
-var firstName =$("#firstName").val();
-var lastName=$("#lastName").val();
-var email =$("#email").val();
-var phoneNumber =$("#phoneNumber").val();
-      console.log(firstName)
-      console.log(lastName)
-      console.log(email)
-      console.log(phoneNumber)
+          var firstName =$("#firstName").val();
+          var lastName=$("#lastName").val();
+          var email =$("#email").val();
+          var phoneNumber =$("#phoneNumber").val();
+      // console.log(firstName)
+      // console.log(lastName)
+      // console.log(email)
+      // console.log(phoneNumber)
     });
 
 });
