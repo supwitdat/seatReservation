@@ -33,7 +33,6 @@ $(document).ready(function(){
     var id = $(this).attr('id');
     console.log(id);
     $('#seatNumber').val(id);
-
   });
 
 
@@ -45,8 +44,7 @@ var email =$("#email").val();
 var phoneNumber =$("#phoneNumber").val();
 
   var person = $('form').serializeArray();
-  console.log(person);
-
+      console.log(person);
       console.log(firstName)
       console.log(lastName)
       console.log(email)
