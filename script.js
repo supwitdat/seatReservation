@@ -33,30 +33,36 @@ $(document).ready(function(){
     var id = $(this).attr('id');
     console.log(id);
     $('#seatNumber').val(id);
+
   });
 
-
     $("#submit").on("click",function getName(){
-
 var firstName =$("#firstName").val();
 var lastName=$("#lastName").val();
 var email =$("#email").val();
 var phoneNumber =$("#phoneNumber").val();
 
-  var person = $('form').serializeArray();
-      console.log(person);
-      console.log(firstName)
-      console.log(lastName)
-      console.log(email)
-      console.log(phoneNumber)
+
+var person = {};
+  person.name = "firstName";
+  person.lastName = "lastName";
+  person.email = "email";
+  person.phoneNumber = "phoneNumber";
+
+console.log(person);
+
+});
+
+
+
+
+  var x = $('form').serializeArray();
+
+  console.log(x);
+      // console.log(firstName)
+      // console.log(lastName)
+      // console.log(email)
+      // console.log(phoneNumber)
     });
-
-// ARRAYS
-var seats = $('.seat');
-var seatNumber = $('.seat').attr('data-seat-number');
-
-
-
-var peopleArray = [];
 
 });
