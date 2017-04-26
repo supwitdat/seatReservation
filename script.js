@@ -1,14 +1,14 @@
 $(document).ready(function(){
 
 
-  // var form = $('form');
-  //     form.hide();
-  //
-  //     form.slideDown(8000).fadeOut(8000);
-  //    ///// alex added slideUp
-  //
-  //     form.slideDown(3000);
-  //     form.fadeTo(3000, 0.0);
+  var form = $('form');
+      form.hide();
+
+      form.slideDown(8000).fadeOut(8000);
+     ///// alex added slideUp
+
+      form.slideDown(3000);
+      form.fadeTo(3000, 0.0);
 
     var seat = $('.seat');
     seat.on('click',function(){
