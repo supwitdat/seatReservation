@@ -5,9 +5,15 @@ $(document).ready(function(){
 
   var form = $('form');
       form.hide();
+
+
+      // form.slideDown(8000).fadeOut(8000);
+
+
      //
     //   form.slideDown(8000).fadeOut(8000);
     //  ///// alex added slideUp
+
 
       form.slideDown(3000);
       // form.fadeTo(3000, 0.0);
@@ -43,17 +49,15 @@ var email =$("#email").val();
 var phoneNumber =$("#phoneNumber").val();
 
 
-var person = {
-  person.name = "firstName",
-  person.lastName = "lastName",
-  person.email = "email",
-  person.phoneNumber = "phoneNumber",
-}
+var person = {};
+  person.name = firstName;
+  person.lastName = lastName;
+  person.email = email;
+  person.phoneNumber = phoneNumber;
 
 console.log(person);
 
 });
 
-    });
 
 });
