@@ -1,4 +1,7 @@
+
 $(document).ready(function(){
+
+//ANIMATIONS
 
   var form = $('form');
       form.hide();
@@ -30,18 +33,37 @@ $(document).ready(function(){
     // 
     // });
 
-     var seats = $('.seat');
-     console.log(seats);
+//FUNCTIONS
+
+  $('.seat').on('click', function(){
+    var id = $(this).attr('id');
+    console.log(id);
+    $('#firstName').val(id);
+
+  });
 
     $("#submit").on("click",function getName(){
 var firstName =$("#firstName").val();
 var lastName=$("#lastName").val();
 var email =$("#email").val();
 var phoneNumber =$("#phoneNumber").val();
-      console.log(firstName)
-      console.log(lastName)
-      console.log(email)
-      console.log(phoneNumber)
+
+
+
+  var person = $('form').serializeArray();
+  console.log(person);
+
+      // console.log(firstName)
+      // console.log(lastName)
+      // console.log(email)
+      // console.log(phoneNumber)
     });
+
+// ARRAYS
+var seats = $('.seat');
+var seatNumber = $('.seat').attr('data-seat-number');
+
+
+var peopleArray = [];
 
 });
