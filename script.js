@@ -2,15 +2,15 @@ $(document).ready(function(){
 
   var form = $('form');
       form.hide();
-<<<<<<< HEAD
+
 
       // form.slideDown(8000).fadeOut(8000);
 
-=======
+
      //
     //   form.slideDown(8000).fadeOut(8000);
     //  ///// alex added slideUp
->>>>>>> 6adbce640c29ea15da13216a425ff261066f08c7
+
 
       form.slideDown(3000);
       // form.fadeTo(3000, 0.0);
@@ -25,10 +25,10 @@ $(document).ready(function(){
     //   form.fadeToggle( "slow", "linear" );
     // });
 
-    seat.mouseleave(function(){
-      form.fadeTo(1000, 0.0);
-
-    });
+    // seat.mouseleave(function(){
+    //   form.fadeTo(1000, 0.0);
+    // 
+    // });
 
      var seats = $('.seat');
      console.log(seats);
