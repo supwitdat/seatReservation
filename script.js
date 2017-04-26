@@ -5,9 +5,15 @@ $(document).ready(function(){
 
   var form = $('form');
       form.hide();
+
+
+      // form.slideDown(8000).fadeOut(8000);
+
+
      //
     //   form.slideDown(8000).fadeOut(8000);
     //  ///// alex added slideUp
+
 
       form.slideDown(3000);
       // form.fadeTo(3000, 0.0);
@@ -24,7 +30,7 @@ $(document).ready(function(){
 
     // seat.mouseleave(function(){
     //   form.fadeTo(1000, 0.0);
-    //
+    // 
     // });
 
 //FUNCTIONS
