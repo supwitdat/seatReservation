@@ -43,26 +43,17 @@ var email =$("#email").val();
 var phoneNumber =$("#phoneNumber").val();
 
 
-var person = {};
-  person.name = "firstName";
-  person.lastName = "lastName";
-  person.email = "email";
-  person.phoneNumber = "phoneNumber";
+var person = {
+  person.name = "firstName",
+  person.lastName = "lastName",
+  person.email = "email",
+  person.phoneNumber = "phoneNumber",
+}
 
 console.log(person);
 
 });
 
-
-
-
-  var x = $('form').serializeArray();
-
-  console.log(x);
-      // console.log(firstName)
-      // console.log(lastName)
-      // console.log(email)
-      // console.log(phoneNumber)
     });
 
 });
