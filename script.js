@@ -38,33 +38,35 @@ $(document).ready(function(){
   $('.seat').on('click', function(){
     var id = $(this).attr('id');
     console.log(id);
-    $('#seatNumber').val(id);
+    $('#firstName').val(id);
 
   });
 
-
     $("#submit").on("click",function getName(){
-
 var firstName =$("#firstName").val();
 var lastName=$("#lastName").val();
 var email =$("#email").val();
 var phoneNumber =$("#phoneNumber").val();
 
-  var person = $('form').serializeArray();
-  console.log(person);
+var person = {};
+  person.name = "firstName";
+  person.lastName = "lastName";
+  person.email = "email";
+  person.phoneNumber = "phoneNumber";
 
-      console.log(firstName)
-      console.log(lastName)
-      console.log(email)
-      console.log(phoneNumber)
+console.log(person);
+
+});
+
+
+
+  var x = $('form').serializeArray();
+
+  console.log(x);
+      // console.log(firstName)
+      // console.log(lastName)
+      // console.log(email)
+      // console.log(phoneNumber)
     });
-
-// ARRAYS
-var seats = $('.seat');
-var seatNumber = $('.seat').attr('data-seat-number');
-
-
-
-var peopleArray = [];
 
 });
