@@ -32,7 +32,7 @@ $(document).ready(function(){
   $('.seat').on('click', function(){
     var id = $(this).attr('id');
     console.log(id);
-    $('#firstName').val(id);
+    $('#seatNumber').val(id);
 
   });
 
@@ -43,10 +43,10 @@ var email =$("#email").val();
 var phoneNumber =$("#phoneNumber").val();
 
 var person = {};
-  person.name = "firstName";
-  person.lastName = "lastName";
-  person.email = "email";
-  person.phoneNumber = "phoneNumber";
+  person.name = firstName;
+  person.lastName = lastName;
+  person.email = email;
+  person.phoneNumber = phoneNumber;
 
 console.log(person);
 
@@ -54,13 +54,6 @@ console.log(person);
 
 
 
-  var x = $('form').serializeArray();
-
-  console.log(x);
-      // console.log(firstName)
-      // console.log(lastName)
-      // console.log(email)
-      // console.log(phoneNumber)
     });
 
 });
