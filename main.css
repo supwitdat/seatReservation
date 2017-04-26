@@ -55,11 +55,17 @@ header {
 }
 
 form {
-  height: 400px;
+  height: auto;
   width: 300px;
   position: absolute;
   top: 0px;
   left: 0px;
-  background-color: green;
+  background-color: white;
   margin: 10px;
+  padding:0 0 2% 2%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/*Added a class around all form inputs, Trying to center it in the div -- unsuccessful*/
+#formInputs{
+  margin:0 auto;
 }
