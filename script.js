@@ -1,6 +1,5 @@
 $(document).ready(function(){
 
-
   var form = $('form');
       form.hide();
 <<<<<<< HEAD
@@ -21,6 +20,7 @@ $(document).ready(function(){
     //     form.fadeToggle(2000, 1.0);
     // });
 
+
     // $('.seat').click(function() {
     //   form.fadeToggle( "slow", "linear" );
     // });
@@ -31,12 +31,17 @@ $(document).ready(function(){
     });
 
      var seats = $('.seat');
-
      console.log(seats);
 
-     function getName(){
-       var firstName = document.getElementById('firstName').value;
-       console.log(firstName);
-     }
+    $("#submit").on("click",function getName(){
+var firstName =$("#firstName").val();
+var lastName=$("#lastName").val();
+var email =$("#email").val();
+var phoneNumber =$("#phoneNumber").val();
+      console.log(firstName)
+      console.log(lastName)
+      console.log(email)
+      console.log(phoneNumber)
+    });
 
 });
