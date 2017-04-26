@@ -15,7 +15,7 @@ $(document).ready(function(){
     //  ///// alex added slideUp
 
 
-      form.slideDown(3000);
+      // form.slideDown(3000);
       // form.fadeTo(3000, 0.0);
 
     // var seat = $('.seat');
@@ -39,6 +39,8 @@ $(document).ready(function(){
     var id = $(this).attr('id');
     console.log(id);
     $('#seatNumber').val(id);
+
+    form.slideToggle(1000);
 
   });
 
