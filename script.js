@@ -47,13 +47,14 @@ var firstName =$("#firstName").val();
 var lastName=$("#lastName").val();
 var email =$("#email").val();
 var phoneNumber =$("#phoneNumber").val();
-
+var seatNumber = $('#seatNumber').val();
 
 var person = {};
   person.name = firstName;
   person.lastName = lastName;
   person.email = email;
   person.phoneNumber = phoneNumber;
+  person.seatNumber = seatNumber;
 
 console.log(person);
 
