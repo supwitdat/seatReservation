@@ -99,7 +99,7 @@ $(document).ready(function(){
 
             people.push(person);
 
-            console.log(people);
+            // console.log(people);
 
   /*slides form up when submit clicked */
             form.slideUp(1000);
@@ -117,11 +117,17 @@ seatArray.each(function(index, element){
  if(selectedSeat === element.id){
    console.log('adding a class');
    element.className = "reservedSeat seat";
+
+  //  seatName = element;
+   element.setAttribute('data-toggle', 'tooltip');
+  element.setAttribute('title', person.name);
  }
 
 });
 
 /*9 closes submit onclick*/
         });
+
+  //  $('[data-toggle="tooltip"]').tooltip();
 
 }); /*closes the jQuery document ready function */
