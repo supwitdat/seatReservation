@@ -67,6 +67,10 @@ p{
     background-image: url('chair2.png');
 }
 
+.reservedSeat:hover {
+  background-image: url('chair2.png');
+}
+
 form {
   height: auto;
   width: 300px;
