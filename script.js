@@ -120,13 +120,14 @@ seatArray.each(function(index, element){
 
   //  seatName = element;
    element.setAttribute('data-toggle', 'tooltip');
-  element.setAttribute('title', person.name);
+  element.setAttribute('title', person.name + ' ' + person.lastName);
  }
 
 });
 
 /*9 closes submit onclick*/
         });
+$('.reservedSeat').tooltip({show: {effect:"none", delay:0}});
 
   //  $('[data-toggle="tooltip"]').tooltip();
 
