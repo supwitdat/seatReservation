@@ -119,17 +119,15 @@ seatArray.each(function(index, element){
    element.className = "reservedSeat seat";
 
   //  seatName = element;
-  element.setAttribute('data-toggle', 'tooltip');
-  element.setAttribute('title', person.name + ' ' + person.lastName);
+   element.setAttribute('data-toggle', 'tooltip');
+  element.setAttribute('title', person.name);
  }
 
 });
 
 /*9 closes submit onclick*/
         });
-$('.reservedSeat').tooltip({show: {effect:"none", delay:0}});
 
   //  $('[data-toggle="tooltip"]').tooltip();
-for
 
 }); /*closes the jQuery document ready function */
