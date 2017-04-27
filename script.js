@@ -113,12 +113,14 @@ $(document).ready(function(){
 // $(selectedSeat).removeClass();
 // $(selectedSeat).addClass("reservedSeat");
 var seatArray = $('.seat');
-console.log(seatArray);
 var selectedSeat = seatNumber;
-seatArray.forEach(function(index){
-  if(selectedSeat === index.attr("id")){
-    index.addClass("reservedSeat");
-  }
+ console.log(typeof selectedSeat);
+seatArray.each(function(index, element){
+ console.log(element);
+ if(selectedSeat === element.id){
+   console.log('adding a class');
+   element.className = "reservedSeat seat";
+ }
 
 });
 
