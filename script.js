@@ -60,7 +60,7 @@ $(document).ready(function(){
 
 /*3*/       people.forEach(function(index){
 /*4*/             if( divId === index.seatNumber);
-/*5*/                  show(index.name);
+/*5*/                  console.log(index.name);
                 });
       });
 
