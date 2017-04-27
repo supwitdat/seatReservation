@@ -1,4 +1,3 @@
-
 $(document).ready(function(){
 
 //ANIMATIONS
@@ -47,7 +46,6 @@ $(document).ready(function(){
 
 /*SEAT MOUSEOVER to try and display people's information, once submitted,
   when we hover a div with the class seat.
-
 1. Creates the mouseover function targeting .seat divs.
 2. Creates a variable divId and assigns the hovered elements id attr to it.
 3. Creates a for Each loop to itterate through the indexes of the array we
