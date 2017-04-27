@@ -108,9 +108,19 @@ $(document).ready(function(){
             form.slideUp(1000);
 
 ////######### Cannot target the correct seat class/Id in order to change it to red after submit button on.click
-var selectedSeat= $(this).attr('id');
-$(selectedSeat).removeClass();
-$(selectedSeat).addClass("reservedSeat");
+// var selectedSeat= $(this).attr('id');
+// console.log(selectedSeat);
+// $(selectedSeat).removeClass();
+// $(selectedSeat).addClass("reservedSeat");
+var seatArray = $('.seat');
+console.log(seatArray);
+var selectedSeat = seatNumber;
+seatArray.forEach(function(index){
+  if(selectedSeat === index.attr("id")){
+    index.addClass("reservedSeat");
+  }
+
+});
 
 /*9 closes submit onclick*/
         });
