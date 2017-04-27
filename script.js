@@ -18,6 +18,15 @@ $(document).ready(function(){
 /* ------------------------ */
 //FUNCTIONS
 
+//
+// $('.reservedSeat').on('click', function(){
+//
+//       // if ($(this).attr('class', 'reservedSeat')){
+//       alert('Sorry, this seat is reserved.');
+//     // }
+//
+// });
+
 /* SEAT ONCLICK for divs with seat class.
   1. Targets all divs with class of seat and creates an onclick function.
   2. Creates id variable and assigns id value of whatever div is clicked on
@@ -33,7 +42,16 @@ $(document).ready(function(){
 
 /*4*/    form.slideDown(1000);
 
+        if ($(this).hasClass('reservedSeat')){
+
+            alert('sorry, this seat is reserved.');
+
+            form.hide();
+        }
+
       });
+
+
 
 // /*Form Focus & Hide*/
 //       function showHideFormQues(i){
@@ -126,8 +144,12 @@ seatArray.each(function(index, element){
 });
 
 /*9 closes submit onclick*/
+
         });
    //
+
   //  $('[data-toggle="tooltip"]').tooltip();
+
+
 
 }); /*closes the jQuery document ready function */
