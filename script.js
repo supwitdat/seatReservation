@@ -7,6 +7,7 @@ $(document).ready(function(){
   var form = $('form');
       form.hide();
 
+
 /* ------------------------- */
 //ARRAYS
 
@@ -35,10 +36,17 @@ $(document).ready(function(){
 
       });
 
+// /*Form Focus & Hide*/
+//       function showHideFormQues(i){
+//          if($("firstName.form-group").focus){
+//            $("i.form-group").next();
+//          }else {
+//            $("i.form-group").hide();
+//           }
+//        });
 
-
-/*SEAT MOUSEOVER to try an display people's information, once submitted,
-  when we hover a div with the class seet.
+/*SEAT MOUSEOVER to try and display people's information, once submitted,
+  when we hover a div with the class seat.
 
 1. Creates the mouseover function targeting .seat divs.
 2. Creates a variable divId and assigns the hovered elements id attr to it.
@@ -114,9 +122,23 @@ mouseleave: function (event) {
 
   /*slides form up when submit clicked */
             form.slideUp(1000);
+
+////######### Cannot target the correct seat class/Id in order to change it to red after submit button on.click
+// var selectedSeat= $(this).attr('id');
+// console.log(selectedSeat);
+// $(selectedSeat).removeClass();
+// $(selectedSeat).addClass("reservedSeat");
+var seatArray = $('.seat');
+console.log(seatArray);
+var selectedSeat = seatNumber;
+seatArray.forEach(function(index){
+  if(selectedSeat === index.attr("id")){
+    index.addClass("reservedSeat");
+  }
+
+});
+
 /*9 closes submit onclick*/
         });
-
-
 
 }); /*closes the jQuery document ready function */
