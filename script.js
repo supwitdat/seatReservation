@@ -1,4 +1,3 @@
-
 $(document).ready(function(){
 
 //ANIMATIONS
@@ -47,7 +46,6 @@ $(document).ready(function(){
 
 /*SEAT MOUSEOVER to try and display people's information, once submitted,
   when we hover a div with the class seat.
-
 1. Creates the mouseover function targeting .seat divs.
 2. Creates a variable divId and assigns the hovered elements id attr to it.
 3. Creates a for Each loop to itterate through the indexes of the array we
@@ -57,24 +55,13 @@ $(document).ready(function(){
 5. Then console log the value of the key 'name' in that object.
 */
 
-// $(".seat").on({
-// mouseenter: function (event) {
-//   console.log('Im in');
-// },
-// mouseleave: function (event) {
-//      console.log('Im out');
-//    }
-// });
-
-OLD MOUSE ENTER CODE FROM LAST NIGHT
-
-/*1*/ $('.seat').on('mouseenter', function(){
+/*1*/ $('.seat').on('mouseover', function(){
 /*2*/       var divId = $(this).attr('id');
 
- /*3*/       people.forEach(function(index){
+/*3*/       people.forEach(function(index){
 /*4*/             if( divId === index.seatNumber);
 /*5*/                  console.log(index.name);
-                 });
+                });
       });
 
 
@@ -94,10 +81,6 @@ OLD MOUSE ENTER CODE FROM LAST NIGHT
 /*5*/     var phoneNumber =$("#phoneNumber").val();
 /*6*/     var seatNumber = $('#seatNumber').val();
 
-    // var message = $('<p>');
-    //     message.text(seatNumber);
-    //     message.css("color", "white");
-    // body.append(message);
 
 /* 7. The below section creates an empty object,
       and assigns the variables above to the appropriate
@@ -129,14 +112,13 @@ OLD MOUSE ENTER CODE FROM LAST NIGHT
 // $(selectedSeat).addClass("reservedSeat");
 var seatArray = $('.seat');
 var selectedSeat = seatNumber;
-
-  console.log(typeof selectedSeat);
+ console.log(typeof selectedSeat);
 seatArray.each(function(index, element){
-  console.log(element);
-  if(selectedSeat === element.id){
-    console.log('adding a class');
-    element.className = "reservedSeat seat";
-  }
+ console.log(element);
+ if(selectedSeat === element.id){
+   console.log('adding a class');
+   element.className = "reservedSeat seat";
+ }
 
 });
 
