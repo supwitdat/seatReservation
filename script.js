@@ -119,7 +119,7 @@ seatArray.each(function(index, element){
    element.className = "reservedSeat seat";
 
   //  seatName = element;
-   element.setAttribute('data-toggle', 'tooltip');
+  element.setAttribute('data-toggle', 'tooltip');
   element.setAttribute('title', person.name);
  }
 
@@ -127,7 +127,7 @@ seatArray.each(function(index, element){
 
 /*9 closes submit onclick*/
         });
-
+   //
   //  $('[data-toggle="tooltip"]').tooltip();
 
 }); /*closes the jQuery document ready function */
