@@ -23,7 +23,7 @@ $(document).ready(function(){
   2. Creates id variable and assigns id value of whatever div is clicked on
         so we can send it to #seatNumber element on form.
   3. Sets the value of the #seatNumber form element to the value of variable id.
-  4. Toggles the form to slide up and down when a seat is clicked.
+  4. Makes form to slide down when a seat is clicked.
 */
 /*1*/ $('.seat').on('click', function(){
 
@@ -31,7 +31,7 @@ $(document).ready(function(){
 
 /*3*/    $('#seatNumber').val(id);
 
-/*4*/    form.slideToggle(1000);
+/*4*/    form.slideDown(1000);
 
       });
 
@@ -94,7 +94,10 @@ $(document).ready(function(){
 
             people.push(person);
 
+            console.log(people);
 
+  /*slides form up when submit clicked */
+            form.slideUp(1000);
 /*9 closes submit onclick*/
         });
 
