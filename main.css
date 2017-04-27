@@ -38,7 +38,7 @@ p{
   height: 50%;
   /*background-color: red;*/
   margin: 0 auto;
-  margin-top: 50px;
+  /*margin-top: 50px;*/
 }
 
 .row {
@@ -94,7 +94,7 @@ form {
 .glyphicon{
   background-color: grey;
   color:white;
-  align:left;
+  /*align:left;*/
 }
 
 /* Toottip test
