@@ -137,8 +137,9 @@ seatArray.each(function(index, element){
    element.className = "reservedSeat seat";
 
   //  seatName = element;
-  element.setAttribute('data-toggle', 'tooltip');
-  element.setAttribute('title', person.name);
+
+   element.setAttribute('data-toggle', 'tooltip');
+  element.setAttribute('title', person.name + ' ' + person.lastName);
  }
 
 });
