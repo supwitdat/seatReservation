@@ -98,7 +98,7 @@ $(document).ready(function(){
 /*4*/     var email =$("#email").val();
 /*5*/     var phoneNumber =$("#phoneNumber").val();
 /*6*/     var seatNumber = $('#seatNumber').val();
-
+      $('input[type="text"],[type="email"],[type="phoneNumber"], textarea').val('');
 
 /* 7. The below section creates an empty object,
       and assigns the variables above to the appropriate
@@ -138,16 +138,16 @@ seatArray.each(function(index, element){
 
   //  seatName = element;
    element.setAttribute('data-toggle', 'tooltip');
-  element.setAttribute('title', person.name + ' ' + person.lastName);
+  element.setAttribute('title', person.name);
  }
 
 });
 
 /*9 closes submit onclick*/
+
 });
 
 
-$('.reservedSeat').tooltip({show: {effect:"none", delay:0}});
 
   //  $('[data-toggle="tooltip"]').tooltip();
 
