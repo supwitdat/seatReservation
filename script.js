@@ -3,93 +3,101 @@ $(document).ready(function(){
 
 //ANIMATIONS
 
+//Hides form when page loads
   var form = $('form');
       form.hide();
 
+/* ------------------------- */
+//ARRAYS
 
-      // form.slideDown(8000).fadeOut(8000);
-
-
-     //
-    //   form.slideDown(8000).fadeOut(8000);
-    //  ///// alex added slideUp
-
-
-      // form.slideDown(3000);
-      // form.fadeTo(3000, 0.0);
-
-    // var seat = $('.seat');
-    // seat.on('click',function(){
-    //     form.fadeToggle(2000, 1.0);
-    // });
-
-
-    // $('.seat').click(function() {
-    //   form.fadeToggle( "slow", "linear" );
-    // });
-
-    // seat.mouseleave(function(){
-    //   form.fadeTo(1000, 0.0);
-    //
-    // });
-
-//ARRAY
+/* This array is empty, it lets us push our people object into it
+    Then use a forEach to loop through them and get people's info */
     var people = [];
 
 
-
+/* ------------------------ */
 //FUNCTIONS
 
-  $('.seat').on('click', function(){
-    var id = $(this).attr('id');
-    //To Test if click matches seat id
-    //console.log(id);
-    $('#seatNumber').val(id);
+/* SEAT ONCLICK for divs with seat class.
+  1. Targets all divs with class of seat and creates an onclick function.
+  2. Creates id variable and assigns id value of whatever div is clicked on
+        so we can send it to #seatNumber element on form.
+  3. Sets the value of the #seatNumber form element to the value of variable id.
+  4. Toggles the form to slide up and down when a seat is clicked.
+*/
+/*1*/ $('.seat').on('click', function(){
 
-    form.slideToggle(1000);
+/*2*/    var id = $(this).attr('id');
 
-  });
+/*3*/    $('#seatNumber').val(id);
 
- var idCheck = $('.seat').attr('id');
+/*4*/    form.slideToggle(1000);
 
-$('.seat').on('mousein', function(){
-    var divId = $(this).attr('id');
-    console.log('its the id');
-  people.forEach(function(index){
-    if( divId === index.seatNumber);
-          console.log('it matched');
-  });
+      });
 
 
 
-});
+/*SEAT MOUSEOVER to try an display people's information, once submitted,
+  when we hover a div with the class seet.
+
+1. Creates the mouseover function targeting .seat divs.
+2. Creates a variable divId and assigns the hovered elements id attr to it.
+3. Creates a for Each loop to itterate through the indexes of the array we
+      named 'people'.
+4. Conditional statement of forEach loop. If divId is equal to a
+      seatnumber in any object in the array of people,
+5. Then console log the value of the key 'name' in that object.
+*/
+
+/*1*/ $('.seat').on('mouseover', function(){
+/*2*/       var divId = $(this).attr('id');
+
+/*3*/       people.forEach(function(index){
+/*4*/             if( divId === index.seatNumber);
+/*5*/                  console.log(index.name);
+                });
+      });
+
+
+/*SUBMIT BUTTON ON CLICK
+  1. Creates submit button onclick function.
+  2. Creates variable firstName assigns it the value of the forms #firstname input.
+  3. Creates variable lastName assigns it the value of the forms #lastName input.
+  4. Creates variable email assigns it the value of the forms #email input.
+  5. Creates variable phoneNumber assigns it the value of the forms #phoneNumber input.
+  6. Creaes variable seatNumber assigns it the value of the forms #seatNumber input.
+*/
+
+/*1*/ $("#submit").on("click",function getName(){
+/*2*/     var firstName =$("#firstName").val();
+/*3*/     var lastName=$("#lastName").val();
+/*4*/     var email =$("#email").val();
+/*5*/     var phoneNumber =$("#phoneNumber").val();
+/*6*/     var seatNumber = $('#seatNumber').val();
+
+
+/* 7. The below section creates an empty object,
+      and assigns the variables above to the appropriate
+      object key. For example the first would look like:  name: firstname,
+      within the object. We're still in the submit onclick function.
+*/
+
+            var person = {};
+            person.name = firstName;
+            person.lastName = lastName;
+            person.email = email;
+            person.phoneNumber = phoneNumber;
+            person.seatNumber = seatNumber;
+
+//8  The below section pushes the person object into the array named people (created above).
+  // we're still in the submit onclick function
+
+            people.push(person);
+
+
+/*9 closes submit onclick*/
+        });
 
 
 
-    $("#submit").on("click",function getName(){
-var firstName =$("#firstName").val();
-var lastName=$("#lastName").val();
-var email =$("#email").val();
-var phoneNumber =$("#phoneNumber").val();
-var seatNumber = $('#seatNumber').val();
-
-var person = {};
-  person.name = firstName;
-  person.lastName = lastName;
-  person.email = email;
-  person.phoneNumber = phoneNumber;
-  person.seatNumber = seatNumber;
-
-people.push(person);
-
-// people.forEach(function(index){
-//   if( idCheck === index.seatNumber);
-//
-// });
-
-});
-
-
-
-
-});
+}); /*closes the jQuery document ready function */
