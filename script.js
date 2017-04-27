@@ -89,7 +89,6 @@ $(document).ready(function(){
       object key. For example the first would look like:  name: firstname,
       within the object. We're still in the submit onclick function.
 */
-
             var person = {};
             person.name = firstName;
             person.lastName = lastName;
