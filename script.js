@@ -44,7 +44,7 @@ $(document).ready(function(){
 
         if ($(this).hasClass('reservedSeat')){
 
-            alert('sorry, this seat is reserved.');
+            alert('Sorry, this seat is already reserved SUCKA!');
 
             form.hide();
         }
@@ -129,11 +129,11 @@ $(document).ready(function(){
 // $(selectedSeat).addClass("reservedSeat");
 var seatArray = $('.seat');
 var selectedSeat = seatNumber;
- console.log(typeof selectedSeat);
+ // console.log(typeof selectedSeat);
 seatArray.each(function(index, element){
- console.log(element);
+ // console.log(element);
  if(selectedSeat === element.id){
-   console.log('adding a class');
+  //  console.log('adding a class');
    element.className = "reservedSeat seat";
 
   //  seatName = element;
