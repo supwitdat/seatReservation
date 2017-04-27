@@ -49,14 +49,26 @@ $(document).ready(function(){
 5. Then console log the value of the key 'name' in that object.
 */
 
-/*1*/ $('.seat').on('mouseover', function(){
-/*2*/       var divId = $(this).attr('id');
+$(".seat").on({
+mouseenter: function (event) {
+  console.log('Im in');
+},
+mouseleave: function (event) {
+     console.log('Im out');
+   }
+});
 
-/*3*/       people.forEach(function(index){
-/*4*/             if( divId === index.seatNumber);
-/*5*/                  console.log(index.name);
-                });
-      });
+//OLD MOUSE ENTER CODE FROM LAST NIGHT
+//
+// /*1*/ $('.seat').on('mouseenter', function(){
+// // /*2*/       var divId = $(this).attr('id');
+//             console.log('mouseenter');
+//
+// // /*3*/       people.forEach(function(index){
+// // /*4*/             if( divId === index.seatNumber);
+// // /*5*/                  console.log(index.name);
+// //                 });
+//       });
 
 
 /*SUBMIT BUTTON ON CLICK
