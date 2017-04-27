@@ -75,6 +75,10 @@ $(document).ready(function(){
 /*5*/     var phoneNumber =$("#phoneNumber").val();
 /*6*/     var seatNumber = $('#seatNumber').val();
 
+    // var message = $('<p>');
+    //     message.text(seatNumber);
+    //     message.css("color", "white");
+    // body.append(message);
 
 /* 7. The below section creates an empty object,
       and assigns the variables above to the appropriate
