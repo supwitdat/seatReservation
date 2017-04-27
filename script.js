@@ -129,6 +129,7 @@ OLD MOUSE ENTER CODE FROM LAST NIGHT
 // $(selectedSeat).addClass("reservedSeat");
 var seatArray = $('.seat');
 var selectedSeat = seatNumber;
+
   console.log(typeof selectedSeat);
 seatArray.each(function(index, element){
   console.log(element);
