@@ -44,7 +44,7 @@ $(document).ready(function(){
 
         if ($(this).hasClass('reservedSeat')){
 
-            alert('sorry, this seat is reserved.');
+            alert('Sorry, this seat is already reserved SUCKA!');
 
             form.hide();
         }
