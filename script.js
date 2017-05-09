@@ -140,6 +140,7 @@ seatArray.each(function(index, element){
 
   element.setAttribute('data-toggle', 'tooltip');
   element.setAttribute('title', person.name + ' ' + person.lastName);
+
  }
 
 });
