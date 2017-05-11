@@ -44,7 +44,7 @@ $(document).ready(function(){
 
         if ($(this).hasClass('reservedSeat')){
 
-            alert('Sorry, this seat is already reserved SUCKA!');
+            alert('Sorry, this seat is already reserved. Please choose another.');
 
             form.hide();
         }
@@ -117,6 +117,7 @@ $(document).ready(function(){
 
             people.push(person);
 
+
             // console.log(people);
 
   /*slides form up when submit clicked */
@@ -128,6 +129,8 @@ $(document).ready(function(){
 // $(selectedSeat).removeClass();
 // $(selectedSeat).addClass("reservedSeat");
 var seatArray = $('.seat');
+console.log(seatArray);
+
 var selectedSeat = seatNumber;
  // console.log(typeof selectedSeat);
 seatArray.each(function(index, element){
